@@ -58,12 +58,4 @@ Grow into a **Data Analyst** role by shipping clean, documented projects that sh
 
 ---
 
-## 📈 Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=JahiduddinRasel&show_icons=true&theme=default&hide_title=false)
-
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=JahiduddinRasel&layout=compact&theme=default)
-
----
-
 ✨ Thanks for visiting — more projects coming as I learn!# JahiduddinRasel-
