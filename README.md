@@ -38,8 +38,7 @@ Multi-year retail transactions (UCI Online Retail II).
 - Product master using most-frequent description
 - Executive KPIs: Revenue, Orders, Customers, AOV, **Refund Rate %** + YoY ▲/▼
 
-*(Repo link — add after you upload the project)*  
-`https://github.com/JahiduddinRasel/online-retail-powerbi`
+https://github.com/JahiduddinRasel/online-retail-powerbi
 
 ### 2. HR Analytics — Employee Attrition *(in progress)*
 IBM HR attrition dataset — drivers of leaving, overtime risk, department/role views, 2-page report.
