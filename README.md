@@ -41,8 +41,16 @@ Multi-year retail transactions (UCI Online Retail II).
 https://github.com/JahiduddinRasel/online-retail-powerbi
 
 ### 2. HR Analytics — Employee Attrition *(in progress)*
-IBM HR attrition dataset — drivers of leaving, overtime risk, department/role views, 2-page report.
+IBM HR Analytics dataset — 1,470 employees · 35 attributes.
 
+- Automated Magic Folder pipeline (new HR exports → Refresh)
+- Star schema: fact_hr + 8 dimensions — employee, job, education, work-life balance + 4 role-playing satisfaction dims
+- Surrogate key (job_role_id) built via multi-column merge; snake_case cleanup, constant columns removed
+- DAX: attrition rate, overtime attrition rate, age banding + custom sort columns
+- 2-page report — Executive Overview ↔ Detailed Analysis (synced slicers, nav buttons, conditional-formatted matrix)
+- Findings: 16.1% attrition · overtime ≈ 30% · Sales Reps 39.8% · "Bad" work-life balance 31%+
+ 
+https://github.com/JahiduddinRasel/hr-analytics-powerbi
 ---
 
 ## 🎯 Goal
