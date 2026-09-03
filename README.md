@@ -27,30 +27,33 @@ I focus on **Power BI**, **Power Query**, **DAX**, and **star-schema** data mode
 
 ---
 
-## 📌 Projects
+# 📌 Featured Power BI Projects
 
-### 1. Online Retail — Executive Sales Dashboard ( my first one)
-Multi-year retail transactions (UCI Online Retail II).
+### 1. 🛍️ [Online Retail — Executive Sales Dashboard] (My first One)
+(https://github.com/JahiduddinRasel/online-retail-powerbi)
+Multi-year retail transactional dataset (UCI Online Retail II) transformed into an executive revenue analytics dashboard.
 
-- Automated **Magic Folder** pipeline (Excel/CSV, any file or sheet name → Refresh)
-- Star schema: `fact_sales` · `dim_product` · `dim_date`
-- Guest customers kept as `-1` (no dropping ~20% of revenue)
-- Product master using most-frequent description
-- Executive KPIs: Revenue, Orders, Customers, AOV, **Refund Rate %** + YoY ▲/▼
+- **Automated Data Pipeline:** Built a "Magic Folder" ingestion pipeline in Power Query handling dynamic files, sheet names, and automated refreshes.
+- **Data Modeling:** Designed a clean Star Schema (`fact_sales` · `dim_product` · `dim_date`).
+- **Data Integrity:** Preserved guest/anonymous transactions using a `-1` key to keep ~20% of total revenue without dropping data.
+- **Product Master:** Built cleaned product descriptions using most-frequent naming logic across historical records.
+- **Executive Metrics:** Revenue, Orders, Active Customers, AOV, Refund Rate %, and YoY Growth (▲/▼) using advanced DAX time intelligence.
+- 🔗 **Repo Link:** [online-retail-powerbi](https://github.com/JahiduddinRasel/online-retail-powerbi)
 
-https://github.com/JahiduddinRasel/online-retail-powerbi
+---
 
-### 2. HR Analytics — Employee Attrition *(in progress)*
-IBM HR Analytics dataset — 1,470 employees · 35 attributes.
+### 2. 👥 [HR Analytics — Employee Attrition & Performance Dashboard]
+(https://github.com/JahiduddinRasel/hr-analytics-powerbi)
+Comprehensive HR attrition analysis using the IBM HR dataset to identify flight risks, overtime impact, and workplace satisfaction drivers.
 
-- Automated Magic Folder pipeline (new HR exports → Refresh)
-- Star schema: fact_hr + 8 dimensions — employee, job, education, work-life balance + 4 role-playing satisfaction dims
-- Surrogate key (job_role_id) built via multi-column merge; snake_case cleanup, constant columns removed
-- DAX: attrition rate, overtime attrition rate, age banding + custom sort columns
-- 2-page report — Executive Overview ↔ Detailed Analysis (synced slicers, nav buttons, conditional-formatted matrix)
-- Findings: 16.1% attrition · overtime ≈ 30% · Sales Reps 39.8% · "Bad" work-life balance 31%+
- 
-https://github.com/JahiduddinRasel/hr-analytics-powerbi
+- **Automated Ingestion:** Implemented folder-connector ETL in Power Query to automatically combine and clean monthly HR export files.
+- **Star Schema Architecture:** Decomposed raw data into `fact_hr` surrounded by 8 dimension tables (`dim_employee`, `dim_job`, lookup dimensions).
+- **Role-Playing Dimensions:** Handled multi-attribute satisfaction ratings (Environment, Job, Relationship, Involvement) using DAX table copies to optimize model performance.
+- **Advanced DAX & Binning:** Custom age group binning logic, custom sort orders, overtime attrition rates, and dynamic conditional metrics.
+- **Interactive 2-Page Dashboard:**
+  - *Page 1 (Executive Overview):* Top KPIs, Department/Role Breakdown, Age & Gender Demographics, Income Distribution.
+  - *Page 2 (Detailed Analysis):* Workplace Satisfaction Impact, Work-Life Balance Matrix, Income vs. Tenure Scatter, and Role Risk Matrix.
+- 🔗 **Repo Link:** [hr-analytics-powerbi](https://github.com/JahiduddinRasel/hr-analytics-powerbi)
 ---
 
 ## 🎯 Goal
